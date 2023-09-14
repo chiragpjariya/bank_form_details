@@ -1,0 +1,75 @@
+.container {
+    display: grid;
+    place-items: center;
+    height: 80vh;
+
+}
+
+:placeholder-shown {
+    font-weight: 600;
+}
+
+form {
+    border: 2px solid black;
+    border-radius: 15px;
+    background-image: url('omg.jpg');
+}
+
+div {
+    margin: 20px;
+}
+
+input:hover {
+    border: 2px solid black;
+    transition: border 2s ease-in-out;
+}
+
+input {
+    height: 20px;
+}
+
+input::after {
+    content: "";
+    inset: 0;
+    border-bottom: 2px solid red;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.9s ease-in-out;
+}
+
+input:hover::after {
+    transform: scaleX(0);
+}
+
+button {
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+}
+
+button {
+    display: grid;
+    place-items: center;
+    height: 5vh;
+    cursor:pointer;
+    margin-left: 39px;
+}
+
+body {
+    background-image: url('colorful.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#checkbox {
+    width: 17px;
+    accent-color: red;
+    cursor:pointer;
+}
+
+span {
+    text-transform: capitalize;
+    color: black;
+    font-weight: 800;
+}
+
